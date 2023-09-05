@@ -1,0 +1,50 @@
+{% include 'header.html' %}
+
+<!--Contact-->
+<div class="contact" id="contact-me">
+    <div id="frmContact">
+        <form id="contactForm" method="post" data-netlify="true" data-netlify-honeypot="botfield">
+            <input type="hidden" name="form-name" value="contactForm">
+            <!-- Spam Protection Field -->
+            <div style="display: none;">
+                <label>Don't fill this out if you're human: <input name="bot-field"></label>
+            </div>
+            <div>
+                <label for="name">Name</label><br/>
+                <input type="text" name="name" class="demoInputBox" placeholder="Name" required>
+            </div>
+            <div>
+                <label for="email">Email</label><br/>
+                <input type="email" name="email" class="demoInputBox" placeholder="Email" required>
+            </div>
+            <div>
+                <label for="subject">Subject</label><br/>
+                <input type="text" name="subject"class="demoInputBox" placeholder="Subject" required>
+            </div>
+            <div>
+                <label for="message">Message</label><br/>
+                <textarea name="message" class="demoInputBox" placeholder="Message" required></textarea>
+            </div>
+            <div data-netlify-recaptcha="true" style="transform: scale(0.8); transform-origin: 0 0;" loading="lazy"></div>
+            <br/>
+            <div>  
+                <input type="submit" name="send" value="Send" class="contact-button" style="background-color: var(--text-color); color: var(--primary);
+                text-decoration: none;
+                border-radius: 5px; display: block;
+                cursor: pointer;
+                margin: 0 auto;
+                margin-top: 20px;
+                padding: 12px 30px;">
+            </div>
+    </form>
+    <div class="contact-content">
+        <h3 class="mail">
+            dharsannofficial@gmail.com
+        </h3>
+    </div>
+    <div class="contact-icons">
+        <a href="https://www.linkedin.com/in/dharsann-a-a59995262/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/dharsann" target="_blank"><i class="bx bxl-github"></i></a>
+    </div>
+</div>
+</div>

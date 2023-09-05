@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <div class="logo">
+                    <a href="{{ url_for('index') }}"><h1 class="navbar-brand">Dharsann</h1></a>
+                </div>
+                <div class="menu-items">
+                    <ul>
+                        <li><a href="{{ url_for('about') }}">About</a></li>
+                        <li><a href="{{ url_for('passions') }}">Passion</a></li>
+                        <li><a href="{{ url_for('projects') }}">Projects</a></li>
+                        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="menu-icon">
+                    <i class="bx bx-menu" style="color: var(--primary);" onclick="toggleMenu()"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="menu-window" id="menu-window">
+        <div class="close-button" id="close-button"><i class="bx bx-window-close" style="font-size: 40px;" onclick="closeMenu()"></i></div>
+        <ul class="menu-links">
+            <li><a href="{{ url_for('about') }}" style="color: var(--primary);" onclick="closeMenu()">About</a></li>
+            <li><a href="{{ url_for('passions') }}" style="color: var(--primary);" onclick="closeMenu()">Passion</a></li>
+            <li><a href="{{ url_for('projects') }}" style="color: var(--primary);" onclick="closeMenu()">Projects</a></li>
+            <li><a href="{{ url_for('contact') }}" style="color: var(--primary);" onclick="closeMenu()">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Rest of your HTML content goes here -->
+    <script src="{{ url_for('static', filename='js/dark.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/toggle.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/contact.js') }}"></script>
+</body>
+</html>
