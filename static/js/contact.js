@@ -4,10 +4,10 @@ document.getElementById("contactForm").addEventListener("submit", function (even
     event.preventDefault();
 
     // Create a FormData object from the form
-    var formData = new FormData(event.target);
+    let formData = new FormData(event.target);
 
     // Create an empty object to store form data
-    var formDataObject = {};
+    let formDataObject = {};
 
     // Iterate through the FormData and convert it into an object
     formData.forEach(function (value, key) {
