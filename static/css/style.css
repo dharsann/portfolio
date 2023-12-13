@@ -194,12 +194,6 @@
     background-color: var(--secondary);
     padding: 50px 0;
   }
-
-  .container{
-    max-width: 1200px;
-    margin:0 auto;
-    padding: 20px;
-  }
   .left-content {
     text-align: center;
 }
